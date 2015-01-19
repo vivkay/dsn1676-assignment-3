@@ -1,0 +1,57 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.black {
+    background-color: black;
+}
+
+.asteroid {
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    width: 100px;
+    height: 100px;
+    animation: spin 8s ease-in-out alternate infinite;
+}
+
+.ship {
+    position: absolute;
+    top: 300px;
+    right: 300px;
+    width: 100px;
+    height: 100px;
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+
+@keyframes quiver {
+
+
