@@ -33,7 +33,7 @@ html {
 
 .ship {
     position: absolute;
-    top: 300px;
+    top: 150px;
     right: 300px;
     width: 100px;
     height: 100px;
@@ -55,33 +55,31 @@ html {
 @keyframes ship {
     0% {
         transform: translateY(0);
-        background-color: red;
+    }
+    
+    30% {
+        transform: translateY(20px);
     }
     
     50% {
-        transform: translateY(400px);
-        background-color: orange;
+        transform: translateX(50px);
     }
     
     70% {
-        transform: translateY(200px);
-        background-color: yellow;
+        transform: translateY(70px);
     }
     
-    81.74% {
-        transform: translate&(400px);
-        background-color: green;
-    }
-    
-    92% {
-        transform: translateY(320px);
-        background-color: blue;
+    90% {
+        transform: translateX(30px);
     }
     
     100% {
-        transform: translateY(400px);
-        background-color: violet;
+        transform: translateY(0px);
     }
 }
 
+.stars {
+    background-image: url(../img/stars.svg);
+    transform: scale(1.5, 1.5);
+}
 
