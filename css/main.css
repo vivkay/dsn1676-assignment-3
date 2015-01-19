@@ -37,7 +37,7 @@ html {
     right: 300px;
     width: 100px;
     height: 100px;
-    animation: spin 5s linear infinite;
+    animation: ship 5s linear infinite;
 }
 
 @keyframes spin {
@@ -52,6 +52,36 @@ html {
     
 }
 
-@keyframes quiver {
+@keyframes ship {
+    0% {
+        transform: translateY(0);
+        background-color: red;
+    }
+    
+    50% {
+        transform: translateY(400px);
+        background-color: orange;
+    }
+    
+    70% {
+        transform: translateY(200px);
+        background-color: yellow;
+    }
+    
+    81.74% {
+        transform: translate&(400px);
+        background-color: green;
+    }
+    
+    92% {
+        transform: translateY(320px);
+        background-color: blue;
+    }
+    
+    100% {
+        transform: translateY(400px);
+        background-color: violet;
+    }
+}
 
 
