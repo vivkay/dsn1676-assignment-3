@@ -28,6 +28,7 @@ html {
     left: 200px;
     width: 100px;
     height: 100px;
+    -webkit-animation: spin 8s ease-in-out alternate infinite;
     animation: spin 8s ease-in-out alternate infinite;
 }
 
@@ -41,38 +42,60 @@ html {
 }
 
 @keyframes spin {
-
     0% {
         transform: rotate(0deg);
     }
-    
     100% {
         transform: rotate(360deg);
     }
-    
+}
+
+@-webkit-keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes ship {
     0% {
         transform: translateY(0);
     }
-    
     30% {
         transform: translateY(20px);
     }
-    
     50% {
         transform: translateX(50px);
     }
-    
     70% {
         transform: translateY(70px);
     }
-    
     90% {
         transform: translateX(30px);
     }
-    
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@-webkit-keyframes ship {
+    0% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(20px);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    70% {
+        transform: translateY(70px);
+    }
+    90% {
+        transform: translateX(30px);
+    }
     100% {
         transform: translateY(0px);
     }
@@ -89,10 +112,19 @@ html {
     0% {
         transform: scale(1, 1);
     }
-    
     100% {
         transform: scale(1.25, 1.25);
     }
 }
-    
+  
+
+@-webkit-keyframes pulse {
+    0% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1.25, 1.25);
+    }
+}
+   
 
