@@ -42,7 +42,7 @@ html {
     animation: ship 5s linear infinite;
 }
 
-@keyframes spin {
+@-webkit-keyframes spin {
     0% {
         transform: rotate(0deg);
     }
@@ -51,7 +51,7 @@ html {
     }
 }
 
-@-webkit-keyframes spin {
+@keyframes spin {
     0% {
         transform: rotate(0deg);
     }
@@ -110,15 +110,6 @@ html {
     animation: pulse 5s ease-in-out alternate infinite;
 }
 
-@keyframes pulse {
-    0% {
-        transform: scale(1, 1);
-    }
-    100% {
-        transform: scale(1.25, 1.25);
-    }
-}
-
 @-webkit-keyframes pulse {
     0% {
         transform: scale(1, 1);
@@ -127,5 +118,42 @@ html {
         transform: scale(1.25, 1.25);
     }
 }
-   
 
+@keyframes pulse {
+    0% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1.25, 1.25);
+    }
+}
+ 
+.bullet {
+    position: absolute;
+    top: 200px;
+    right: 400px;
+    background-color: orange;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    -webkit-animation: fire 2s ease-in-out infinite;
+    animation: fire 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes fire {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-400px);
+    }
+}
+
+@keyframes fire {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-400px);
+    }
+}
